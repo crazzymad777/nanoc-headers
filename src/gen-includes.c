@@ -1,6 +1,12 @@
-// gcc src/gen-includes.c -I includes/ -L. -lnanoc -nostdlib crt/amd64/*.s -o bin/gen-includes
+// gcc -DNANOC_BOOTSTRAP src/gen-includes.c -I includes/ -L. -lnanoc -nostdlib crt/amd64/*.s -o bin/gen-includes
 
+#ifdef NANOC_BOOTSTRAP
+int metadata_version();
+void metadata_query(void* ptr);
+#else
 #include <nanoc/metadata.h>
+#endif
+
 #include <string.h>
 #include <stdio.h>
 
