@@ -11,5 +11,7 @@ void* _malloc(ulong size);
 void _free(void* ptr);
 // submodule nanoc.std.stdlib.memory end
 noreturn exit(int status);
+extern char** environ;
+int system(char* command);
 void* calloc(ulong nmemb, ulong size);
 #endif
