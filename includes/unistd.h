@@ -6,4 +6,5 @@ int fork();
 int unlink(char* pathname);
 long lseek(int fd, long offset, int whence);
 int execve(char* pathname, char** argv, char** envp);
+int getpid();
 #endif

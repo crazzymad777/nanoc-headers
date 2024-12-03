@@ -15,6 +15,7 @@ int system(char* command);
 // submodule nanoc.std.stdlib.system end
 extern char* SHELL;
 noreturn exit(int status);
+noreturn abort();
 extern char** environ;
 void* calloc(ulong nmemb, ulong size);
 #endif
