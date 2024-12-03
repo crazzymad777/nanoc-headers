@@ -10,8 +10,11 @@ void free(void* ptr);
 void* _malloc(ulong size);
 void _free(void* ptr);
 // submodule nanoc.std.stdlib.memory end
+// submodule: nanoc.std.stdlib.system
+int system(char* command);
+// submodule nanoc.std.stdlib.system end
+extern char* SHELL;
 noreturn exit(int status);
 extern char** environ;
-int system(char* command);
 void* calloc(ulong nmemb, ulong size);
 #endif
