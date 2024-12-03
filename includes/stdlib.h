@@ -13,6 +13,10 @@ void _free(void* ptr);
 // submodule: nanoc.std.stdlib.system
 int system(char* command);
 // submodule nanoc.std.stdlib.system end
+// submodule: nanoc.std.stdlib.random
+int rand();
+void srand(int seed);
+// submodule nanoc.std.stdlib.random end
 extern char* SHELL;
 noreturn exit(int status);
 noreturn abort();
