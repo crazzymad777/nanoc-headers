@@ -15,7 +15,7 @@ int system(char* command);
 // submodule nanoc.std.stdlib.system end
 // submodule: nanoc.std.stdlib.random
 int rand();
-void srand(int seed);
+void srand(uint seed);
 // submodule nanoc.std.stdlib.random end
 extern char* SHELL;
 noreturn exit(int status);
